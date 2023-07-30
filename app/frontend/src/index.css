@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: #eee;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #eee;
+}
+
+.input_holder {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  flex: 1;
+  font-size: 16px;
+  background-color: #444;
+  color: #eee;
+}
+
+button {
+  background-color: #007bff;
+  color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #444;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.icon_holder {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #eee;
+}
+
+.icon.edit {
+  color: #007bff;
+}
+
+.icon.delete {
+  color: #dc3545;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .input_holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+}
